@@ -12,8 +12,12 @@ body {
     color: #fff;
 }
 
-href {
+a {
     color: white;
+}
+
+a:hover {
+    color: greenyellow;
 }
 
 /*grid*/
@@ -62,6 +66,7 @@ href {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .navbar ul li:first-child {
@@ -79,6 +84,7 @@ href {
     position: absolute;
     background: #333;
     padding: 0;
+    border-radius: 30px;
 }
 
 .meny > ul > li  {
@@ -120,7 +126,7 @@ href {
         "footer footer";
     padding: 25px;
     width: 100%;
-    margin: 75px auto 75px auto;
+    margin: 30px auto 75px auto;
     box-sizing: border-box;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
     -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
@@ -162,7 +168,7 @@ aside {
     float: right;
 }
 
-/*heading*/
+/*header*/
 .header {
     text-align: left;
 }
@@ -172,7 +178,7 @@ aside {
     color: white;
 }
 
-.article h2 {
+h2 {
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
@@ -186,7 +192,7 @@ iframe {
 
 /*Les mer...-knapp*/
 .button a {
-    color: black;
+    color: white;
     text-align: center;
     padding: 10px;
     border: 2px solid gray;
