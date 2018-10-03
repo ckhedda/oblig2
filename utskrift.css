@@ -232,7 +232,9 @@ hr.type_3 {
 }
 /*Kilde: https://www.formget.com/css-hr/*/
 
-/* @media Rule */
-@media print and (max-width: 1024px) {
-}
+@media only print and (max-width:620px) {
+    .header, .navbar, .container-grid, .footer {
+      width:100%;
+    }
+  }
 

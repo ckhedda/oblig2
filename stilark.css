@@ -276,6 +276,9 @@ hr.type_3 {
 }
 /*Kilde: https://www.formget.com/css-hr/*/
 
-/* @media Rule */
-@media screen and (max-width: 1024px) {
-}
+/*media*/
+@media only screen and (max-width:1000px) {
+    .header, .navbar, .container-grid, .footer {
+      width:100%;
+    }
+  }
