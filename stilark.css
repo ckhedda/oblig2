@@ -4,48 +4,8 @@ body {
     font-weight: 400;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #fff
+    color: #fff;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
 }
 
 /*Kilde: https://codepen.io/P1N2O/pen/pyBNzX*/
@@ -80,20 +40,16 @@ a:hover {
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    width: 52%;
+    width: auto;
     margin: 0 auto;
+    display: flex;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    justify-content: center;
 }
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline-block;
-}
-
-.navbar ul li a {
+.navbar a {
     text-decoration: none;
     color: #fff;
     transition: .25s ease-in-out;
@@ -101,7 +57,7 @@ a:hover {
     padding: 10px;
 }
 
-.navbar ul li a:hover {
+.navbar hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     cursor: pointer;
@@ -116,44 +72,12 @@ a:hover {
     padding-right: 5px;
 }
 
-
-/*Navbar Meny*/
-.meny > ul {
-    display: none;
-    position: absolute;
-    background: #333;
-    padding: 0;
-    border-radius: 30px;
-    
-}
-
-.meny > ul > li  {
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 5px;
-    padding-left: 5px;
-    width: 94%;
-}
-
-.meny:hover > ul {
-    width: 150px;
-    display: block;
-    border-radius: 20px;
-}
-
-.meny > ul > li > a {
-    padding: 10px;
-    display: block;
-    border-radius: 20px;
-}
-
 /*container*/
-.container-grid {
+container-grid {
     grid-area: container;
     background-color: #333;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 30%;
     grid-template-areas: 
         "main aside" 
         "main aside"
@@ -240,41 +164,9 @@ iframe {
     text-decoration: underline;
 }
 
-/*Flex-container*/
-.flex-container {
-    display: flex;
-    flex-direction: initial;
-    background-image: url(coldplay-up-and-up-music-video-a-head-full-of-dreams-watch-640x427.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-    border-radius: 25px;
-    color: black;
-    width: 590px;
-  }
-  
-.flex-container > div {
-    background-color: transparent;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    color: black;
-}
-
 .show {
     display: block;
 }
-
-/*HR-linje*/
-hr.type_3 {
-    border: 0;
-    height: 25px;
-    background-image: url(type_3.png);
-    background-repeat: no-repeat;
-}
-/*Kilde: https://www.formget.com/css-hr/*/
 
 /*media*/
 @media only screen and (max-width:1000px) {
@@ -282,3 +174,8 @@ hr.type_3 {
       width:100%;
     }
   }
+
+/*bilder*/
+.skisser {
+    width: 30%; 
+}

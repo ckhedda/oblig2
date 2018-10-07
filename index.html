@@ -11,35 +11,27 @@
     <link href="utskrift.css" media="print" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body>
-    <div class="grid">
-    <div class="header">
+    <body class="grid">
+    <header>
             <h1>Obligatorisk oppgave 2</h1>
-    </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html"><i class='fas fa-home'></i> Hjem</a></li>
-                <li><a href="http://itstud.hiof.no/~hckarlse/webutvikling/oblig1/index.html">Tidligere OBLIG-oppgaver</a></li> 
-                <li><a href="mailto:hedda.c.karlsen@hiof.no"><i class='fas fa-envelope'></i> hedda.c.karlsen@hiof.no</a></li>
-                <li class="meny">
-                    <a href="#">Meny <i class="fa fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="artikkel.html">Git / Github</a></li>
-                        <li><a href="mediatyper.html">Mediatyper</a></li>
-                        <li><a href="CSSFlexogGrid.html">CSS Layouts</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="container-grid">
+        <flex-container>
+            <nav class="navbar">
+                            <a href="index.html"><i class='fas fa-home'></i> Hjem</a>
+                            <a href="skisse.html">Skisser</a>
+                            <a href="gitoggithub.html">Git / Github</a>
+                            <a href="mediatyper.html">Medietyper</a>
+                            <a href="CSSFlexogGrid.html">CSS Layouts</a>
+            </nav>
+        </flex-container>
+            </header>
+            <container-grid>
             <main>
+                <section>
                         <h2>Hjemmeside</h2>
                         <hr class="type_3">
-                <section>
                     <h3>Oppgave 1</h3>
                     <p>Lage en wireframe/skisse av nettstedet og en artikkelside med valgfritt verktøy</p>
-                    <p class="button"><a href="skisseartikkel.jpg" target="_blank">Les mer...</a></p>
-                    <p class="button"><a href="skissehovedside.jpg" target="_blank">Les mer...</a></p>
+                    <p class="button"><a href="skisse.html" target="_blank">Les mer...</a></p>
                 <br>
                     <h3>Oppgave 2</h3>
                     <p>Lage nettstedets forside og en mal for en artikkelside basert på skissene fra oppgave 1 i HTML og CSS. </p>
@@ -49,7 +41,7 @@
                     <p>Lage et repository på Github der du legger opp filene for denne innleveringen.</p>
                     <p>Lage så en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver hva Git og Github er, hvilke fordeler det er med å bruke Git og hva du syntes om det. Legg ved et bilde av din siste commit i Github.</p>
                     <a href="https://github.com/ckhedda/oblig2" target="_blank">Link til repository</a>
-                    <p class="button"><a href="artikkel.html">Les mer...</a></p>
+                    <p class="button"><a href="gitoggithub.html">Les mer...</a></p>
                 <br>
                     <h3>Oppgave 4</h3>
                     <p>Lage en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver hva Media typer er og hvordan man bruker disse. Beskriv gjerne hvilke fordeler og ulemper dette har og hvorfor ikke alle Media typer like mye brukt som tidligere.</p>
@@ -62,15 +54,9 @@
                     <h3>Oppgave 6</h3>
                     <p>Lage et print stilark for artikkel sidene som lar besøkende skrive ut artiklene du har skrevet ordentlig. Link så print stilarket opp til alle artikkelsider</p>
                     <p class="button"><a href="utskrift.css">Les mer...</a></p>
-                <br>
-                    <div class="flex-container">
-                        <div><a href="artikkel.html">Git / Github</a></div>
-                        <div><a href="mediatyper.html">Medietyper</a></div>
-                        <div><a href="CSSFlexogGrid.html">CSS Layouts</a></div>
-                    </div>  
-                    <hr class="type_3">          
                 </section>
             </main>
+            </container-grid> 
             <aside>
                 <section>
                         <h2>Sidekolonne</h2>
@@ -103,7 +89,5 @@
                             alt="Valid CSS!" /></a></p>
                 </section>
             </footer>
-        </div>
-    </div>
 </body>
 </html>
