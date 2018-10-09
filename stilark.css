@@ -22,20 +22,27 @@ a:hover {
 /*flex-container*/
 .flex-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: transparent;
 }
 
 .flex-container-lesmer {
     display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.flex-container-lesmer > a {
+    display: inline-block;
+    flex: 2 2 auto;
+    margin: 0 35px 0 35px;
 }
   
 .flex-container > article {
     background-color: transparent;
     margin: 10px;
-    border-left: 2px solid gray;
-    padding-left: 37px;
-    text-align: center;
+    width: 100%;
 }
 
 .flex-container > article > h3 {
@@ -43,24 +50,38 @@ a:hover {
     text-decoration: underline;
 }
 
+.flex-container > article > h4 {
+    text-decoration: underline;
+} 
+
 .flex-container > article > p {
     font-size: 15px;
 }
 
-.flex-container > article:first-child {
-    border-left: 0;
-    padding-left: 0;
+/*Youtubevideo*/
+
+iframe {
+    display: block;
+    width: 100%;
 }
 
+input[value="Github"] {
+    width: 100%;
+}
+
+button[id="githubsøk"] {
+    width: 100%;
+}
 
 /*grid*/
 .grid {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 25% 25%;
     grid-template-areas: 
-    "header"
-    "navbar"
-    "container";
+    "header header header"
+    "navbar navbar navbar"
+    "main main aside"
+    "footer footer footer";
     grid-gap: 0;
     width: 68%;
     margin: 0 auto;
@@ -68,22 +89,24 @@ a:hover {
 
 /*Navbar*/
 .navbar  {
+    padding: 5px 0;
     grid-area: navbar;
-    display: flex;
     background: #333;
     border-radius: 30px;
     width: auto;
     margin: 0 auto;
+    display: flex;
     text-align: center;
     position: relative;
+    border-radius: 25px;
     justify-content: center;
 }
 
 .navbar a {
     text-decoration: none;
     color: #fff;
-    transition: .15s ease-in-out;
-    transition-property: border-radius;
+    transition: .25s ease-in-out;
+    transition-property: background, border-radius;
     padding: 10px;
     list-style-type: none;
 }
@@ -118,18 +141,20 @@ a:hover {
 
 main {
     grid-area: main;
-    padding: 0 15px;
+    padding: 15px;
     background: #444;
     border-radius: 30px;
     padding-bottom: 15px;
 }
 
 aside {
-    margin-left: 25px;
     grid-area: aside;
+    margin-left: 15px;
     padding: 0 15px;
     background: #444;
     border-radius: 30px;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
 .footer {
@@ -154,7 +179,9 @@ aside {
 
 /*header*/
 header {
+    grid-area: navbar;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 header h1 {
@@ -168,36 +195,27 @@ h2 {
     text-align: center;
 }
 
-/*Youtubevideo*/
-iframe {
-    width: 190px;
-    height: 110px;
-}
-
 /*sidekolonne*/
 aside > section > p {
     text-align: center;
 }
 
 /*Les mer...-knapp*/
-.button a {
+.button {
     color: white;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
     text-align: center;
     border-radius: 30px;
     justify-content: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 0 5px 0;
     list-style-type: none;
     border-style: groove;
 }
-.button a:hover {
+
+.button:hover {
     color: white;
-    transition: .15s ease-in-out;
-    transition-property: border-radius;
+    transition: .25s ease-in-out;
+    transition-property: background, border-radius;
     list-style-type: none;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -210,11 +228,70 @@ aside > section > p {
 }
 
 /*bilder*/
-.skisser {
-    width: 30%; 
+.skisser img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+    grid-gap: 20px;
+    padding-top: 10px;
 }
 /*googleknapp*/ 
 .google {
     text-align: center;
     padding-bottom: 15px;
+}
+
+/*media*/ 
+@media print {
+    body {
+        font-family: Verdana;
+        background: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .grid {
+        display:block;
+        width: 100%;
+    }
+
+    .flex-container {
+        display: block;
+        width: 100%;
+    }
+
+    section.flex-container > article {
+        text-align: left;
+        width: 100%;
+    }
+
+    section.flex-container > article > p {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
 }
