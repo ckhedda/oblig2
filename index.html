@@ -8,73 +8,76 @@
     <title>Obligatorisk oppgave 2</title>
     <link href="felles.css" rel="stylesheet" type="text/css">
     <link href="stilark.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="responsivt.css" media="screen" rel="stylesheet" type="text/css">
     <link href="utskrift.css" media="print" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
     <body class="grid">
     <header>
-            <h1>Obligatorisk oppgave 2</h1>
-        <flex-container>
-            <nav class="navbar">
-                            <a href="index.html"><i class='fas fa-home'></i> Hjem</a>
-                            <a href="skisse.html">Skisser</a>
-                            <a href="gitoggithub.html">Git / Github</a>
-                            <a href="mediatyper.html">Medietyper</a>
-                            <a href="CSSFlexogGrid.html">CSS Layouts</a>
-            </nav>
-        </flex-container>
-            </header>
-            <container-grid>
+        <h1>Obligatorisk oppgave 2</h1>
+        <nav class="navbar">
+            <a href="index.html"><i class='fas fa-home'></i> Hjem</a>
+            <a href="skisse.html">Skisser</a>
+            <a href="gitoggithub.html">Git / Github</a>
+            <a href="mediatyper.html">Medietyper</a>
+            <a href="CSSFlexogGrid.html">CSS Layouts</a>
+        </nav>
+    </header>
+        <section class="container-grid">
             <main>
                 <section>
-                        <h2>Hjemmeside</h2>
-                        <hr class="type_3">
-                    <h3>Oppgave 1</h3>
-                    <p>Lage en wireframe/skisse av nettstedet og en artikkelside med valgfritt verktøy</p>
-                    <p class="button"><a href="skisse.html" target="_blank">Les mer...</a></p>
-                <br>
-                    <h3>Oppgave 2</h3>
-                    <p>Lage nettstedets forside og en mal for en artikkelside basert på skissene fra oppgave 1 i HTML og CSS. </p>
-                    <p class="button"><a href="index.html">Les mer...</a></p>
-                <br>
-                    <h3>Oppgave 3</h3>
-                    <p>Lage et repository på Github der du legger opp filene for denne innleveringen.</p>
-                    <p>Lage så en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver hva Git og Github er, hvilke fordeler det er med å bruke Git og hva du syntes om det. Legg ved et bilde av din siste commit i Github.</p>
-                    <a href="https://github.com/ckhedda/oblig2" target="_blank">Link til repository</a>
-                    <p class="button"><a href="gitoggithub.html">Les mer...</a></p>
-                <br>
+                    <h2>Hjemmeside</h2>
+                    <section class="flex-container">
+                    <article>
+                        <h3>Oppgave 3</h3>
+                        <p>Lage et repository på Github der du legger opp filene for denne innleveringen.</p>
+                        <p>Lage så en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver hva Git og Github er, hvilke fordeler det er med å bruke Git og hva du syntes om det. Legg ved et bilde av din siste commit i Github.</p>
+                        <a href="https://github.com/ckhedda/oblig2" target="_blank">Link til repository</a>
+                    </article>
+                    <br>
+                        <article>
                     <h3>Oppgave 4</h3>
                     <p>Lage en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver hva Media typer er og hvordan man bruker disse. Beskriv gjerne hvilke fordeler og ulemper dette har og hvorfor ikke alle Media typer like mye brukt som tidligere.</p>
-                    <p class="button"><a href="mediatyper.html">Les mer...</a></p>
-                <br>
+                        </article>
+                    <br>
+                        <article>
                     <h3>Oppgave 5</h3>
                     <p>Lage en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver de forskjellige metodene for layouts i CSS. Det er forventet at du beskriver minimum CSS Flexbox og CSS Grid i artikkelen, men ta gjerne med en beskrivelse av eldre metoder for å oppnå strukturerte layouts i CSS.</p>
+                        </article>
+                    </section>
+                    <section class="flex-container-lesmer">
+                    <h3>Hjemmeside
+                    <p class="button"><a href="gitoggithub.html">Les mer...</a></p>
+                    <p class="button"><a href="mediatyper.html">Les mer...</a></p>
                     <p class="button"><a href="CSSFlexogGrid.html">Les mer...</a></p>
-                <br>
-                    <h3>Oppgave 6</h3>
-                    <p>Lage et print stilark for artikkel sidene som lar besøkende skrive ut artiklene du har skrevet ordentlig. Link så print stilarket opp til alle artikkelsider</p>
-                    <p class="button"><a href="utskrift.css">Les mer...</a></p>
+                    </section>
                 </section>
-            </main>
-            </container-grid> 
-            <aside>
-                <section>
-                        <h2>Sidekolonne</h2>
+        </main>
+        <aside>
+                <section class ="responsivt-design">
+                    <h2>Responsivt design</h2>
                     <iframe src="https://www.youtube.com/embed/94h9NSPuGKg"></iframe>
                     <p><a href="https://www.webgruppen.no/hvorfor-er-responsivt-design-viktig-for-din-nettside/">Artikkel til <i>Responsivt design</i> <br>(Webgruppen)</a></p>
                     <p><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Artikkel til <i> Responsivt design</i> <br>(Smashingmagazine)</a></p>
                     <p><a href="https://en.wikipedia.org/wiki/Responsive_web_design">Artikkel til <i>Responsivt design</i> <br>(Wikipedia)</a></p>
                     <p><a href="https://www.techweb.no/blogg/hva-er-responsivt-design">Artikkel til <i>Responsivt design</i> <br>(TechWeb AS)</a></p>
                     <p><a href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">Artikkel til <i>Responsivt design</i> <br>(Digi)</a></p>
-                    <p><a href="https://www.google.com/search?hl=en&q=github" target="_blank" class="ui icon button"><i class="fab fa-google"></i></a></p>        
                 </section>
+                <section class="google">
+                    <a href="https://www.google.no/search?q=github">
+                        <i class="fab fa-google"></i></a>
+                    <form action="https://www.google.no/search" target="_blank">
+                        <input type="text" value="Github" name="q">
+                        <button type="submit">Søk etter Github her...</button>
+                    </form>
+                </section>    
             </aside>
             <footer class="footer">
                 <section class="footer1">
-                        <h2>Footer</h2>
+                    <h2>Footer</h2>
                     <p><i class='fas fa-female'></i> Hedda-Caroline A. Karlsen</p>
                     <p><a href="mailto:hedda.c.karlsen@hiof.no"><i class='fas fa-envelope'></i> hedda.c.karlsen@hiof.no</a></p>
-                    <p><i class='fas fa-calendar-alt'></i> 2018</p>
+                    <p><i class='fas fa-calendar-alt'></i><time datetime="2018"> 2018</time></p>
                 </section>
                 <section class="footer2">
                         <h2>Footer</h2>
@@ -89,5 +92,6 @@
                             alt="Valid CSS!" /></a></p>
                 </section>
             </footer>
+        </section>
 </body>
 </html>
